@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,10 +20,21 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="tech-symbols" aria-hidden="true">
+    <span class="tech-symbol">&lt;/&gt;</span>
+    <span class="tech-symbol">{ }</span>
+    <span class="tech-symbol">AI</span>
+    <span class="tech-symbol">1010</span>
+    <span class="tech-symbol">&lt;code&gt;</span>
+    <span class="tech-symbol">/* */</span>
+    <span class="tech-symbol">()</span>
+    <span class="tech-symbol">&lt;data&gt;</span>
+    <span class="tech-symbol">$</span>
+  </div>
   <!-- Animated Background -->
   <div class="bg-gradient" aria-hidden="true">
     <div class="bg-orb bg-orb--1"></div>
@@ -31,12 +42,6 @@
     <div class="bg-orb bg-orb--3"></div>
   </div>
   <div class="bg-noise" aria-hidden="true"></div>
-
-  <!-- Theme Toggle -->
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
-    <i data-lucide="moon" class="theme-icon theme-icon--dark"></i>
-    <i data-lucide="sun" class="theme-icon theme-icon--light"></i>
-  </button>
 
   <!-- Main Content -->
   <main class="container">
