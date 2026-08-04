@@ -39,6 +39,7 @@ flowchart LR
     A --> I[WhatsApp]
     A --> J[Telegram]
     A --> K[Leetcode]
+```
 
 ## 🛠️ How to run locally
 
@@ -49,24 +50,9 @@ python -m http.server 8000
 
 Then open `http://localhost:8000` in your browser.
 
-<<<<<<< HEAD
-## 📌 Recommended Preview
 
-> Use a light or dark environment for best visual contrast. The cards are designed to feel premium and polished.
-
-## 📷 Screenshot
-
-![Landing Page Preview](https://img.freepik.com/premium-photo/modern-glass-card-interface_107791-7501.jpg?w=740)
-
-=======
->>>>>>> 32d60cec2b116a44bf095deafce4cfd224172100
 ## ✅ Project Notes
 
 - The project is intentionally minimal and fast.
 - Easy to update with new profile links and brand colors.
 - Great for developers, creators, and AI enthusiasts looking for a clean personal hub.
-
-<<<<<<< HEAD
-=======
-# aman-singh-ai-linktree
->>>>>>> 32d60cec2b116a44bf095deafce4cfd224172100
