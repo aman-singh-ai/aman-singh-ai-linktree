@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Singh — Links</title>
+  <meta name="description" content="Aman Singh's personal link-in-bio page. Connect on Instagram, LinkedIn, GitHub, and more." />
+  <meta name="keywords" content="Aman Singh, links, portfolio, social media, developer" />
+  <meta name="author" content="Aman Singh" />
+  <meta property="og:title" content="Aman Singh — Links" />
+  <meta property="og:description" content="All my links in one place. Connect with me!" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="bg-gradient" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+    <i data-lucide="moon" class="theme-icon theme-icon--dark"></i>
+    <i data-lucide="sun" class="theme-icon theme-icon--light"></i>
+  </button>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Profile Section -->
+    <section class="profile" id="profile-section">
+      <div class="profile__avatar-ring">
+        <img src="avatar.jpg" alt="Aman Singh" class="profile__avatar" id="profile-avatar"
+          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><defs><linearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 stop-color=%22%23a855f7%22/><stop offset=%22100%25%22 stop-color=%22%23ec4899%22/></linearGradient></defs><rect fill=%22url(%23g)%22 width=%22200%22 height=%22200%22 rx=%22100%22/><text x=%2250%25%22 y=%2254%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2272%22 font-family=%22Inter,sans-serif%22 font-weight=%22700%22>AS</text></svg>'" />
+      </div>
+      <h1 class="profile__name">Aman Singh</h1>
+      <p class="profile__bio">Developer · Creator · Tech Enthusiast</p>
+      <p class="profile__tagline">Building the future, one line of code at a time ✨</p>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links" id="links-section">
+      <!-- 1. Portfolio -->
+      <a href="https://app-8hw1k84ua3up.appmedo.com" target="_blank" rel="noopener noreferrer" class="link-card" id="link-portfolio">
+        <span class="link-card__icon link-card__icon--portfolio">
+          <img src="https://static.vecteezy.com/system/resources/previews/005/569/210/non_2x/portfolio-icon-in-trendy-long-shadow-style-isolated-on-soft-blue-background-free-vector.jpg" alt="Portfolio logo" />
+        </span>
+        <span class="link-card__content">
+          <span class="link-card__subtitle">Check out my official work</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 2. GitHub -->
+      <a href="https://GitHub.com/aman-singh-ai" target="_blank" rel="noopener noreferrer" class="link-card" id="link-github">
+        <span class="link-card__icon link-card__icon--github">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-svg-download-png-8630395.png?f=webp" alt="GitHub logo" />
+        </span>
+        <span class="link-card__content">
+          <span class="link-card__subtitle">Open source & developments</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 3. LinkedIn -->
+      <a href="https://www.linkedin.com/in/aman-singh-ai-lucknow" target="_blank" rel="noopener noreferrer" class="link-card" id="link-linkedin">
+        <span class="link-card__icon link-card__icon--linkedin">
+          <img src="https://static.vecteezy.com/system/resources/previews/023/986/926/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn logo" />
+        </span>
+        <span class="link-card__content">
+          <span class="link-card__subtitle">Professional network in Lucknow</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 4. Google Skills Profile -->
+      <a href="https://www.skills.google/public_profiles/c2265d1f-05a6-498e-aae3-750444208add" target="_blank" rel="noopener noreferrer" class="link-card" id="link-google">
+        <span class="link-card__icon link-card__icon--google">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png" alt="Google logo" />
+        </span>
+        <span class="link-card__content">
+          
+          <span class="link-card__subtitle">My public learning certifications</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 5. Google Developer -->
+      <a href="https://g.dev/aman-singh-ai" target="_blank" rel="noopener noreferrer" class="link-card" id="link-google-dev">
+        <span class="link-card__icon link-card__icon--google-dev">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZ9M5Cy6TWYCA0juGw96L_aacPN0ZYkK5vB_oi-T3Ng-Fd9pvEU-AftQ&s=10" />
+        </span>
+        <span class="link-card__content">
+          
+          <span class="link-card__subtitle">My Google for Developers profile</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 6. Credly -->
+      <a href="https://www.credly.com/users/aman-singh.7864d971" target="_blank" rel="noopener noreferrer" class="link-card" id="link-credly">
+        <span class="link-card__icon link-card__icon--credly">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNA85hPLbwodgdX67MXbfEKKIeTwRatO_QRZCr24kMk0WIx7Jy-BZG2cRc&s=10" alt="Credly logo" />
+        </span>
+        <span class="link-card__content">
+          
+          <span class="link-card__subtitle">Verified certificates & badges</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 7. Instagram -->
+      <a href="https://www.instagram.com/vishtech_07?igsh=NmQ0eDJrMWs5eDJ3" target="_blank" rel="noopener noreferrer" class="link-card" id="link-instagram">
+        <span class="link-card__icon link-card__icon--instagram">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s" alt="Instagram logo" />
+        </span>
+        <span class="link-card__content">
+          
+          <span class="link-card__subtitle">Follow my journey</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 8. WhatsApp -->
+      <a href="https://whatsapp.com/channel/0029VbBglI9AojZ0HpIrgU0R" target="_blank" rel="noopener noreferrer" class="link-card" id="link-whatsapp">
+        <span class="link-card__icon link-card__icon--whatsapp">
+          <img src="https://img.freepik.com/premium-vector/whatsapp-logo-iconic-speech-bubble-phone-symbol-green_678821-509.jpg?semt=ais_hybrid&w=740&q=80" alt="WhatsApp logo" />
+        </span>
+        <span class="link-card__content">
+          
+          <span class="link-card__subtitle">Join for tech updates</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+
+      <!-- 9. Telegram -->
+      <a href="https://t.me/VishTechra" target="_blank" rel="noopener noreferrer" class="link-card" id="link-telegram">
+        <span class="link-card__icon link-card__icon--telegram">
+          <img src="https://static.vecteezy.com/system/resources/previews/023/986/562/non_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png" alt="Telegram logo" />
+        </span>
+        <span class="link-card__content">
+         
+          <span class="link-card__subtitle">VishTechra community</span>
+        </span>
+        <span class="link-card__arrow">
+          <i data-lucide="arrow-up-right"></i>
+        </span>
+      </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+      <p>© 2026 Aman Singh. Made with ❤️</p>
+    </footer>
+  </main>
+
+  <!-- External JS file for theme toggle -->
+  <script src="script.js"></script>
+</body>
+</html>
