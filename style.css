@@ -170,7 +170,7 @@ a, button { cursor: pointer; }
    GAP & MARGIN FIX FOR CARDS
    ============================================================ */
 
-/* Tarika 1: Agar cards .links ke andar hain */
+
 .links {
   width: 100%;
   display: flex !important;
