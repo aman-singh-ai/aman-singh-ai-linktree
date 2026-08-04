@@ -79,7 +79,7 @@ a, button { cursor: pointer; }
 .tech-symbol {
   position: absolute;
   display: inline-block;
-  color: rgba(255, 255, 255, 0.16);
+  color: rgba(219, 23, 203, 0.281);
   font-family: var(--font-body);
   font-weight: 700;
   white-space: nowrap;
@@ -137,11 +137,22 @@ a, button { cursor: pointer; }
 
 .profile__avatar-ring {
   width: var(--avatar-size); height: var(--avatar-size); border-radius: 50%;
-  padding: 4px; background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink), var(--neon-blue));
-  margin: 0 auto 18px; box-shadow: 0 0 20px rgba(168,85,247,0.3);
+  padding: 3px; background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink), var(--neon-blue));
+  margin: 0 auto 12px; box-shadow: 0 0 12px rgba(168,85,247,0.22);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
   animation: avatar-pulse 3s ease-in-out infinite;
 }
-.profile__avatar { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--bg-secondary); }
+.profile__avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: zoom out center;
+  margin: 0;
+  background: var(--bg-secondary);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.28);
+}
 
 .profile__name {
   font-family: var(--font-heading); font-size: 1.85rem; font-weight: 700;
@@ -155,17 +166,34 @@ a, button { cursor: pointer; }
 .profile__tagline { font-size: 0.875rem; color: var(--text-muted); }
 
 /* Links */
-.links { width: 100%; display: flex; flex-direction: column; gap: 14px; }
+/* ============================================================
+   GAP & MARGIN FIX FOR CARDS
+   ============================================================ */
+
+/* Tarika 1: Agar cards .links ke andar hain */
+.links {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important; 
+}
+
+.link-card {
+  margin-bottom: 16px !important;
+}
+
 
 .link-card {
   width: 100%; background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(22px);
   border: 1px solid rgba(255, 255, 255, 0.18); border-radius: var(--card-radius);
-  padding: 18px 22px; display: flex; align-items: center; gap: 18px;
+  padding: 14px 18px; display: flex; align-items: center; gap: 12px;
   cursor: pointer; position: relative; overflow: hidden;
   transition: transform 0.28s var(--ease-spring), background 0.28s var(--ease-spring), border-color 0.28s var(--ease-spring), box-shadow 0.28s var(--ease-spring);
   opacity: 0; animation: card-enter 0.5s var(--ease-out-expo) forwards;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
 }
+
+
 .link-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.18);
@@ -204,13 +232,18 @@ a, button { cursor: pointer; }
 
 /* Content */
 .link-card__content { flex-grow: 1; }
-.link-card__title { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 600; color: var(--text-primary); }
-.link-card__subtitle { font-size: 0.95rem; color: rgba(255, 255, 255, 0.92); line-height: 1.6; }
+.link-card__title { font-family: var(--font-heading); font-size: 1.02rem; font-weight: 700; color: var(--text-primary); display: block; }
+.link-card__subtitle { font-size: 0.95rem; color: rgba(255, 255, 255, 0.92); line-height: 1.4; display: block;
+  opacity: 0; max-height: 0; overflow: hidden; transition: opacity 220ms var(--ease-out-expo), max-height 260ms var(--ease-out-expo);
+}
+.link-card:hover .link-card__subtitle { opacity: 1; max-height: 120px; }
 .link-card__arrow { width: 22px; height: 22px; color: rgba(255,255,255,0.75); transition: all 0.3s var(--ease-spring); }
 .link-card:hover .link-card__arrow { color: var(--text-primary); transform: translate(2px, -2px); }
 
 /* Hover Glows */
 #link-portfolio:hover { border-color: var(--neon-cyan); box-shadow: 0 8px 32px rgba(6,182,212,0.22); }
+
+
 #link-github:hover { border-color: #fff; box-shadow: 0 8px 32px rgba(255,255,255,0.15); }
 #link-linkedin:hover { border-color: var(--neon-blue); box-shadow: 0 8px 32px rgba(59,130,246,0.22); }
 #link-google:hover { border-color: var(--neon-orange); box-shadow: 0 8px 32px rgba(249,115,22,0.22); }
@@ -229,7 +262,8 @@ a, button { cursor: pointer; }
   :root { --avatar-size: 92px; --icon-box: 48px; --icon-img: 26px; }
   .container { padding: 34px 14px 32px; }
   .profile__name { font-size: 1.55rem; }
-  .link-card { padding: 13px 16px; gap: 14px; }
+  .link-card { padding: 11px 14px; gap: 10px; }
+  .link-card__subtitle { opacity: 1; max-height: none; }
 }
 
 body { animation: page-load 0.6s var(--ease-out-expo); }
