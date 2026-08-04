@@ -38,6 +38,7 @@ flowchart LR
     A --> H[Instagram]
     A --> I[WhatsApp]
     A --> J[Telegram]
+    A --> K[Leetcode]
 ```
 
 ## 🛠️ How to run locally
